@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackwell-pid"
+version = "0.1.0"
+description = "Closed-form Blackwell union and redundancy for two Gaussian sources (arXiv:2610.07360)"
+requires-python = ">=3.10"
+dependencies = ["jax", "numpy", "scipy"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["blackwell_pid*"]
